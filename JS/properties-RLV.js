@@ -1,8 +1,7 @@
 function showMadLib(){
 
-    //select the div that holds the textboxes and the button
+    //select the div that holds the textboxes 
     const textbox = document.getElementById("txtB");
-    const reset = document.getElementById("resetButton");
 
     //get data from text boxes
     const personT = document.getElementById("person");
@@ -16,7 +15,7 @@ function showMadLib(){
     const tranT = document.getElementById("tran");
     const animalT = document.getElementById("animal");
 
-  
+      //places the data into the textbox div
       textbox.innerText = "I am so excited for Christmas this year! I got " +personT.value+ " a " +noun1T.value+"." +
       " I wrapped their present and hid them in the " +roomT.value+ " so they would not find it." +
       " I made " +foodT.value+ " for everyone to enjoy. It smells " +adjT.value+ " I cannot wait to eat them!" +
