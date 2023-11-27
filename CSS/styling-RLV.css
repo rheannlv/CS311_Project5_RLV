@@ -1,0 +1,80 @@
+
+#container{
+    display: grid;
+    grid-template-columns: [col-start] 1.3fr [line1] 2fr [line2] 1fr [col-end];
+    grid-template-rows: [top-line] 1fr [top-middle] 3fr [middle-bottom] 1fr [bottom-line];
+}
+
+#header{
+    font-size: larger;
+    text-align: center;
+    color: #900000;
+    padding-top: 50px;
+    grid-column-start: line1;
+    grid-column-end: line2;
+    grid-row-start: top-line;
+    grid-row-end: top-middle;
+}
+
+#santa{
+    grid-column-start: col-start;
+    grid-column-end: line1;
+    grid-row-start: top-middle;
+    grid-row-end: middle-bottom;
+}
+
+#txtB{
+    background-color: #900000;
+    text-align: center;
+    font-size: large;
+    border: 5px solid green;
+    margin: auto;
+    width: auto;
+    padding: 80px;
+    grid-column-start: line1;
+    grid-column-end: line2;
+    grid-row-start: top-middle;
+    grid-row-end: middle-bottom;
+}
+
+#showMadLibButton{
+    justify-content: center;
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display:inline-block;
+    font-size: 16px;
+
+}
+
+#resetButton{
+    justify-content: center;
+    grid-column-start: line1;
+    grid-column-end: line2;
+    grid-row-start: middle-bottom;
+    grid-row-end: bottom-line;
+}
+
+.resetB{
+   
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    
+}
+
+
+
+
+
+
+
+
